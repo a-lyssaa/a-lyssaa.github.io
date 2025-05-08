@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vw;
+}
+
+nav img {
+    width: 2vw;
+    height: 2vw;
+}
