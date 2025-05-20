@@ -1,11 +1,37 @@
-nav {
+body {
+    margin: 0;
+}
+
+.nav1, .nav2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4vw;
+    height: clamp(20px, 4vw, 50px);
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+.nav2 {
+    padding: 10px 15vw;
 }
 
 nav img {
-    width: 2vw;
-    height: 2vw;
+    width: clamp(15px, 2vw, 30px);
+    height: clamp(15px, 2vw, 30px);
+    margin: 5px;
+}
+
+.wishlist {
+    text-align: center;
+    align-content: center;
+}
+
+.wishlist p, .wishlist img {
+    margin: 0;
+}
+
+#homepage {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

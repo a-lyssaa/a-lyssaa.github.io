@@ -1,10 +1,21 @@
-.font1 {
-    font-size: 2vw;
+body {
+    font-family: "Arapey", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
-
-
-
+    
 nav {
     background-color: #BAE5FF;
+}
+
+.nav1 {
+    font-size: clamp(10px, 3vw, 30px);
+}
+
+.nav2, #slogan {
+    font-size: clamp(5px, 2.5vw, 25px);
+}
+
+#homepage {
+    background-color: #E8EAE9;
 }
