@@ -42,7 +42,7 @@ body {
     flex-wrap: wrap;
 }
 
-.indiv_prods {
+.home_indiv_prods {
     display: flex;
     margin-bottom: 30px;
     position: relative;
@@ -62,7 +62,7 @@ body {
     width: 255px;
 }
 
-.prod_desc {
+.home_prod_desc {
     height: 100px;
     width: 150px;
     border: 1px solid;

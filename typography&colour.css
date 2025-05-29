@@ -1,3 +1,4 @@
+/* General */
 body {
     font-family: "Arapey", serif;
     font-weight: 400;
@@ -13,7 +14,7 @@ body {
     font-size: clamp(10px, 3vw, 30px);
 }
 
-.nav2, #slogan {
+.nav2 {
     font-size: clamp(5px, 2.5vw, 25px);
 }
 
@@ -22,6 +23,28 @@ a {
     text-decoration: none;
 }
 
-.buttons {
+/* Homepage */
+#slogan {
+    font-size: clamp(5px, 2.5vw, 25px);
+}
+
+.home_prod_desc {
+    background-color: #F3E5C3;
+    box-shadow: 4px 4px lightgrey;
+}
+
+/* Search */
+.add_to_cart, .buttons {
     background-color: #F3E5C3;
 }
+
+.add_to_wishlist {
+    background-color: lightgrey;
+}
+
+.indiv_prods {
+    background-color: white;
+}
+
+/* Results */
+
