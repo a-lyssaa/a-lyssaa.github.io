@@ -15,7 +15,7 @@ body {
     padding: 10px 15vw;
 }
 
-nav img {
+.top img {
     width: clamp(15px, 2vw, 30px);
     height: clamp(15px, 2vw, 30px);
     margin: 5px;
@@ -42,7 +42,7 @@ nav img {
     flex-wrap: wrap;
 }
 
-.indiv_prods {
+.home_indiv_prods {
     display: flex;
     margin-bottom: 30px;
     position: relative;
@@ -62,7 +62,7 @@ nav img {
     width: 255px;
 }
 
-.prod_desc {
+.home_prod_desc {
     height: 100px;
     width: 150px;
     border: 1px solid;
@@ -88,6 +88,5 @@ nav img {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }

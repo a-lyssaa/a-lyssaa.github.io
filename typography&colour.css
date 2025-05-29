@@ -5,7 +5,7 @@ body {
     background-color: #E8EAE9;
 }
     
-nav {
+.top {
     background-color: #D8F3FE;
 }
 
@@ -17,7 +17,24 @@ nav {
     font-size: clamp(5px, 2.5vw, 25px);
 }
 
-.prod_desc {
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.home_prod_desc {
     background-color: #F3E5C3;
     box-shadow: 4px 4px lightgrey;
+}
+
+.add_to_cart {
+    background-color: #F3E5C3;
+}
+
+.add_to_wishlist {
+    background-color: lightgrey;
+}
+
+.indiv_prods {
+    background-color: white;
 }
