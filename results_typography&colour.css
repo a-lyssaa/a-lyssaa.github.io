@@ -22,19 +22,6 @@ a {
     text-decoration: none;
 }
 
-.home_prod_desc {
+.buttons {
     background-color: #F3E5C3;
-    box-shadow: 4px 4px lightgrey;
-}
-
-.add_to_cart {
-    background-color: #F3E5C3;
-}
-
-.add_to_wishlist {
-    background-color: lightgrey;
-}
-
-.indiv_prods {
-    background-color: white;
 }
