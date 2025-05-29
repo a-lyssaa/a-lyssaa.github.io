@@ -2,10 +2,11 @@ body {
     font-family: "Arapey", serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #E8EAE9;
 }
     
 nav {
-    background-color: #BAE5FF;
+    background-color: #D8F3FE;
 }
 
 .nav1 {
@@ -16,6 +17,7 @@ nav {
     font-size: clamp(5px, 2.5vw, 25px);
 }
 
-#homepage {
-    background-color: #E8EAE9;
+.prod_desc {
+    background-color: #F3E5C3;
+    box-shadow: 4px 4px lightgrey;
 }

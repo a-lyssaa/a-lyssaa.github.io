@@ -30,8 +30,64 @@ nav img {
     margin: 0;
 }
 
-#homepage {
+#slogan {
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+#products {
     display: flex;
     justify-content: center;
-    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.indiv_prods {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+@media (min-width: 1100px) {
+    #products {
+        gap: 150px;
+    }
+    .indiv_prods {
+        margin-bottom: 0;
+    }
+}
+
+.prod_img {
+    height: clamp(400px, 100vw, 600px);
+    width: 255px;
+}
+
+.prod_desc {
+    height: 100px;
+    width: 150px;
+    border: 1px solid;
+    margin-top: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.desc_text {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 50.5%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.go_arrow {
+    margin-left: 113px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
