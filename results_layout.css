@@ -23,17 +23,52 @@ body {
 
 .wishlist {
     text-align: center;
-    align-content: center;
 }
 
 .wishlist p, .wishlist img {
     margin: 0;
 }
 
+#results {
+    padding: 20px;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+}
+
 .buttons {
-    width: 50px;
-    height: 20px;
+    width: 75px;
+    height: 25px;
     border: 1px solid;
     border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+#products {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+@media (max-width: 930px) {
+    .results-indiv-prods img {
+        width: 191px;
+        height: 287px;
+    }
+}
+
+@media (max-width: 400px) {
+    .results-indiv-prods img {
+        width: 105px;
+        height: 165px;
+    }
+}
+
+footer {
     text-align: center;
 }

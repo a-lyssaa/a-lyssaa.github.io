@@ -1,5 +1,5 @@
 /* General */
-body {
+body, select {
     font-family: "Arapey", serif;
     font-weight: 400;
     font-style: normal;
@@ -14,7 +14,7 @@ body {
     font-size: clamp(10px, 3vw, 30px);
 }
 
-.nav2 {
+.nav2, .full-prod-desc {
     font-size: clamp(5px, 2.5vw, 25px);
 }
 
@@ -23,28 +23,37 @@ a {
     text-decoration: none;
 }
 
+.add-to-wishlist {
+    background-color: lightgrey;
+    font-size: medium;
+}
+
+.add-to-cart, .add-and-checkout, .buttons {
+    background-color: #F3E5C3;
+    font-size: medium;
+}
+
 /* Homepage */
 #slogan {
     font-size: clamp(5px, 2.5vw, 25px);
 }
 
-.home_prod_desc {
+.home-prod-desc {
     background-color: #F3E5C3;
     box-shadow: 4px 4px lightgrey;
 }
 
 /* Search */
-.add_to_cart, .buttons {
-    background-color: #F3E5C3;
-}
 
-.add_to_wishlist {
-    background-color: lightgrey;
-}
-
-.indiv_prods {
+.search-indiv-prods, #results, #all-prods{
     background-color: white;
 }
 
-/* Results */
+/* Product Page */
+select {
+    font-size: medium;
+}
 
+.additional {
+    font-size: clamp(5px, 2vw, 20px);
+}

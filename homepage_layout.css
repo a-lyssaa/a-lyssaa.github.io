@@ -23,7 +23,6 @@ body {
 
 .wishlist {
     text-align: center;
-    align-content: center;
 }
 
 .wishlist p, .wishlist img {
@@ -42,7 +41,7 @@ body {
     flex-wrap: wrap;
 }
 
-.home_indiv_prods {
+.home-indiv-prods {
     display: flex;
     margin-bottom: 30px;
     position: relative;
@@ -52,17 +51,17 @@ body {
     #products {
         gap: 150px;
     }
-    .indiv_prods {
+    .home-indiv-prods {
         margin-bottom: 0;
     }
 }
 
-.prod_img {
+.prod-img {
     height: clamp(400px, 100vw, 600px);
     width: 255px;
 }
 
-.home_prod_desc {
+.home-prod-desc {
     height: 100px;
     width: 150px;
     border: 1px solid;
@@ -71,7 +70,7 @@ body {
     border-radius: 10px;
 }
 
-.desc_text {
+.desc-text {
     margin-top: 10px;
     margin-bottom: 0;
 }
@@ -83,7 +82,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.go_arrow {
+.go-arrow {
     margin-left: 113px;
 }
 
