@@ -20,9 +20,7 @@
                 <a href="search.html">
                     <img src="img/search_button_icon.png" alt="Search Button">
                 </a>
-                <a href="">
-                    <img src="img/cart_icon.png" alt="Cart Button">
-                </a>
+                <img id="cart-button" src="img/cart_icon.png" alt="Cart Button">
             </div>
         </div>
         <div class="nav2">
@@ -35,11 +33,33 @@
             </div>
             <a href="">NEW ARRIVALS</a>
         </div>
+        <div id="cart-overlay">
+            <div id="blur"></div>
+            <div id="side-cart">
+                <div id="cart-top">
+                    <p>Cart</p>
+                    <img id="close-cart" src="img/x_icon.png" alt="X button">
+                </div>
+                <div id="cart-prods">
+                </div>
+                <div id="cart-details">
+                    <p>Make your wishlist come true!</p>
+                    <p id="cart-wishlist">No products in wishlist at the moment.</p>
+                    <p>Shipping and taxes calculated at checkout.</p>
+                    <div id="subtotal">
+                        <p>Subtotal:</p>
+                        <p></p>
+                    </div>
+                    <div id="checkout-button">
+                        <p>CHECKOUT</p>
+                        <img src="img/cart_icon.png" alt="Cart Icon">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="results">
-        <div>
-            <p>Results for "white shirt":</p>
-        </div>
+        <p>Results for "white shirt":</p>
         <div id="buttons">
             <p class="buttons">Filter</p>
             <p class="buttons">Sort</p>
@@ -66,7 +86,7 @@
                     <p>$330.00</p>
                 </div>
             </div>
-            <div class="results-indiv-prods">
+            <div class="results-indiv-prods" data-product-id="the-03">
                 <img class="prod-img" src="img/the_03.png" alt="The 03 Set" width="250" height="377">
                 <div class="prod-desc">
                     <p>THE 03 SET<br>White</p>

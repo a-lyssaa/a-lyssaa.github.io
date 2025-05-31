@@ -6,7 +6,7 @@ body, select {
     background-color: #E8EAE9;
 }
     
-.top {
+.top, #cart-top {
     background-color: #D8F3FE;
 }
 
@@ -23,12 +23,16 @@ a {
     text-decoration: none;
 }
 
+.search-indiv-prods, #results, #all-prods, #side-cart{
+    background-color: white;
+}
+
 .add-to-wishlist {
     background-color: lightgrey;
     font-size: medium;
 }
 
-.add-to-cart, .add-and-checkout, .buttons {
+.add-to-cart, .add-and-checkout, .buttons, #checkout-button {
     background-color: #F3E5C3;
     font-size: medium;
 }
@@ -43,10 +47,9 @@ a {
     box-shadow: 4px 4px lightgrey;
 }
 
-/* Search */
-
-.search-indiv-prods, #results, #all-prods{
-    background-color: white;
+/* Results */
+#results p {
+    font-size: large;
 }
 
 /* Product Page */

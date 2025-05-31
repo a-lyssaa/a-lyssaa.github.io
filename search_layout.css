@@ -2,7 +2,11 @@ body {
     margin: 0;
 }
 
-.nav1, .nav2 {
+#added-pop-up {
+    display: none;
+}
+
+.nav1, .nav2, #added-pop-up.active {
     display: flex;
     align-items: center;
     height: clamp(20px, 4vw, 50px);
@@ -10,7 +14,7 @@ body {
     padding: 10px;
 }
 
-.nav1 {
+.nav1, #added-pop-up.active {
     justify-content: space-between;
 }
 
@@ -69,4 +73,5 @@ body {
 
 footer {
     text-align: center;
+    height: 35px;
 }

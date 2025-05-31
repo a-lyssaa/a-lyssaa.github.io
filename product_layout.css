@@ -2,7 +2,11 @@ body {
     margin: 0;
 }
 
-.nav1 {
+#added-pop-up, .cart-overlay {
+    display: none;
+}
+
+.nav1, #added-pop-up.active, .cart-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,4 +122,5 @@ body {
 
 footer {
     text-align: center;
+    height: 35px;
 }
