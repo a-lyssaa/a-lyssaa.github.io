@@ -2,6 +2,16 @@ body {
     margin: 0;
 }
 
+body.no-scroll{
+    overflow: hidden;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 .nav1, .nav2, #cart-top {
     display: flex;
     justify-content: space-between;
@@ -30,7 +40,8 @@ body {
 }
 
 #results {
-    padding: 20px;
+    margin-top: clamp(40px, 8vw, 100px);
+    padding: 50px 20px 20px 20px;
 }
 
 #buttons {

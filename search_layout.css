@@ -2,6 +2,12 @@ body {
     margin: 0;
 }
 
+.top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 #added-pop-up {
     display: none;
 }
@@ -22,6 +28,11 @@ body {
     width: clamp(15px, 2vw, 30px);
     height: clamp(15px, 2vw, 30px);
     margin: 5px;
+}
+
+#page {
+    margin-top: clamp(40px, 8vw, 100px);
+    padding: 42px 0 0 0;
 }
 
 .search-indiv-prods {

@@ -43,10 +43,13 @@ window.addEventListener('DOMContentLoaded', function() {
     // Find all "add to cart" buttons on the product page
     var addButtons = document.getElementsByClassName('add-to-cart');
 
-    // Show pop-up when "add to cart" button is clicked
+    // Show pop-up when "add to cart" button is clicked, disappears after 3 seconds
     for (var i = 0; i < addButtons.length; i++) {
       addButtons[i].addEventListener('click', function() {
         popUp.classList.add('active');
+        setTimeout(function() {
+            popUp.classList.remove('active');
+          }, 3000);
       });
     }
 
@@ -69,11 +72,13 @@ window.addEventListener('DOMContentLoaded', function() {
     function openCart() {
         sideCart.classList.add('active');
         overlay.classList.add('active');
+        document.body.classList.add('no-scroll');
     }
     
     function closeCart() {
         sideCart.classList.remove('active');
         overlay.classList.remove('active');
+        document.body.classList.remove('no-scroll');
     }
     
     // Show cart when cart button is clicked
