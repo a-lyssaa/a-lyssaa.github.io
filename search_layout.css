@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-.top {
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -24,13 +24,13 @@ body {
     justify-content: space-between;
 }
 
-.top img {
-    width: clamp(15px, 2vw, 30px);
-    height: clamp(15px, 2vw, 30px);
+header img {
+    width: clamp(15px, 2vw, 25px);
+    height: clamp(15px, 2vw, 25px);
     margin: 5px;
 }
 
-#page {
+main {
     margin-top: clamp(40px, 8vw, 100px);
     padding: 42px 0 0 0;
 }

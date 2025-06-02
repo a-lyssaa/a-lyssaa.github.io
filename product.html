@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="top">
+    <header>
         <div class="nav1">
             <img src="img/menu_icon.png" alt="Menu Button">
             <p>DEIJI STUDIOS</p>
             <div>
                 <img src="img/search_button_icon.png" alt="Search Button">
-                <img src="img/cart_icon.png" alt="Cart Button">
+                <img class="cart-button" src="img/cart_icon.png" alt="Cart Button">
             </div>
         </div>
         <div id="added-pop-up">
@@ -28,8 +28,8 @@
             <p>ADDED TO CART!</p>
             <img id="close-pop-up" src="img/x_icon.png" alt="X button">
         </div>
-    </section>
-    <section id="all-prods">
+    </header>
+    <main id="all-prods">
         <section class="indiv-prods" data-product-id="arch-tie">
             <div class="images">
                 <img src="img/arch_tie.png" alt="Arch Tie Shirt" width="500" height="754">
@@ -76,7 +76,7 @@
                         <p>Add</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
-                    <div class="add-and-checkout">
+                    <div class="cart-button add-and-checkout">
                         <p>Add and checkout</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
@@ -128,7 +128,7 @@
                         <p>Add</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
-                    <div class="add-and-checkout">
+                    <div class="cart-button add-and-checkout">
                         <p>Add and checkout</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
@@ -179,7 +179,7 @@
                         <p>Add</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
-                    <div class="add-and-checkout">
+                    <div class="cart-button add-and-checkout">
                         <p>Add and checkout</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
@@ -231,14 +231,38 @@
                         <p>Add</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
-                    <div class="add-and-checkout">
+                    <div class="cart-button add-and-checkout">
                         <p>Add and checkout</p>
                         <img class="button-img" src="img/cart_icon.png" alt="Cart Icon">
                     </div>
                 </div>
             </div>
         </section>
-    </section>
+    </main>
+    <div id="cart-overlay">
+        <div id="blur"></div>
+        <div id="side-cart">
+            <div id="cart-top">
+                <p>Cart</p>
+                <img id="close-cart" src="img/x_icon.png" alt="X button">
+            </div>
+            <div id="cart-prods">
+            </div>
+            <div id="cart-details">
+                <p>Make your wishlist come true!</p>
+                <p id="cart-wishlist">No products in wishlist at the moment.</p>
+                <p>Shipping and taxes calculated at checkout.</p>
+                <div id="subtotal">
+                    <p>Subtotal:</p>
+                    <p></p>
+                </div>
+                <a id="checkout-button" href="purchasing.html">
+                    <p>CHECKOUT</p>
+                    <img src="img/cart_icon.png" alt="Cart Icon">
+                </a>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>2025 DEIJI STUDIOS</p>
     </footer>

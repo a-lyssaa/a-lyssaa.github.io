@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 // Cart functions
 window.addEventListener('DOMContentLoaded', function() {
-    var cartBtn = document.getElementById('cart-button');
+    var cartBtn = document.getElementsByClassName('cart-button');
     var overlay = document.getElementById('cart-overlay');
     var blur = document.getElementById('blur');
     var sideCart = document.getElementById('side-cart');
@@ -82,7 +82,9 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     
     // Show cart when cart button is clicked
-    cartBtn.addEventListener('click', openCart);
+    for (var i = 0; i < cartBtn.length; i++) {
+        cartBtn[i].addEventListener('click', openCart);
+    }
     
     // Close cart when X button is clicked
     closeBtn.addEventListener('click', closeCart);

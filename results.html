@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="top">
+    <header>
         <div class="nav1">
             <img src="img/menu_icon.png" alt="Menu Button">
             <p>DEIJI STUDIOS</p>
             <div>
                 <img src="img/search_button_icon.png" alt="Search Button">
-                <img id="cart-button" src="img/cart_icon.png" alt="Cart Button">
+                <img class="cart-button" src="img/cart_icon.png" alt="Cart Button">
             </div>
         </div>
         <div class="nav2">
@@ -31,32 +31,8 @@
             </div>
             <a href="">NEW ARRIVALS</a>
         </div>
-        <div id="cart-overlay">
-            <div id="blur"></div>
-            <div id="side-cart">
-                <div id="cart-top">
-                    <p>Cart</p>
-                    <img id="close-cart" src="img/x_icon.png" alt="X button">
-                </div>
-                <div id="cart-prods">
-                </div>
-                <div id="cart-details">
-                    <p>Make your wishlist come true!</p>
-                    <p id="cart-wishlist">No products in wishlist at the moment.</p>
-                    <p>Shipping and taxes calculated at checkout.</p>
-                    <div id="subtotal">
-                        <p>Subtotal:</p>
-                        <p></p>
-                    </div>
-                    <div id="checkout-button">
-                        <p>CHECKOUT</p>
-                        <img src="img/cart_icon.png" alt="Cart Icon">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="results">
+    </header>
+    <main>
         <p>Results for "white shirt":</p>
         <div id="buttons">
             <p class="buttons">Filter</p>
@@ -120,7 +96,31 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
+    <div id="cart-overlay">
+        <div id="blur"></div>
+        <div id="side-cart">
+            <div id="cart-top">
+                <p>Cart</p>
+                <img id="close-cart" src="img/x_icon.png" alt="X button">
+            </div>
+            <div id="cart-prods">
+            </div>
+            <div id="cart-details">
+                <p>Make your wishlist come true!</p>
+                <p id="cart-wishlist">No products in wishlist at the moment.</p>
+                <p>Shipping and taxes calculated at checkout.</p>
+                <div id="subtotal">
+                    <p>Subtotal:</p>
+                    <p></p>
+                </div>
+                <div id="checkout-button">
+                    <p>CHECKOUT</p>
+                    <img src="img/cart_icon.png" alt="Cart Icon">
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>2025 DEIJI STUDIOS</p>
     </footer>
