@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#added-pop-up {
+    display: none;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: clamp(20px, 4vw, 50px);
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+header img, #cart-overlay img {
+    width: clamp(15px, 2vw, 25px);
+    height: clamp(15px, 2vw, 25px);
+    margin: 5px;
+}
+
+main {
+    margin-top: clamp(20px, 4vw, 50px);
+    padding: 25px 0 0 0;
+}

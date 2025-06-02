@@ -64,3 +64,8 @@ select {
 .additional {
     font-size: clamp(5px, 2vw, 20px);
 }
+
+/* Cart */
+#shipping-text {
+    font-size: medium;
+}

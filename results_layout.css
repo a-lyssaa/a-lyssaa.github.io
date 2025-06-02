@@ -118,6 +118,10 @@ body.no-scroll{
     right: 0;
 }
 
+#cart-top {
+    height: 30px;
+}
+
 #cart-prods {
     height: 398px;
     border-bottom: 1px solid;
@@ -134,6 +138,10 @@ body.no-scroll{
     border-radius: 10px;
     text-align: center;
     align-content: center;
+}
+
+#shipping-text {
+    margin-bottom: 0;
 }
 
 #subtotal {
