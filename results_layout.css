@@ -146,6 +146,7 @@ body.no-scroll{
 
 #subtotal {
     display: flex;
+    justify-content: space-between;
 }
 
 #checkout-button {

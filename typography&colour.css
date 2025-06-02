@@ -1,8 +1,11 @@
 /* General */
-body, select {
+body, select, input, button {
     font-family: "Arapey", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+body {
     background-color: #E8EAE9;
 }
     
@@ -32,12 +35,16 @@ main, #side-cart{
     font-size: medium;
 }
 
+select, button {
+    font-size: medium;
+}
+
 .add-to-cart, .add-and-checkout, .buttons, #checkout-button {
     background-color: #F3E5C3;
     font-size: medium;
 }
 
-#side-cart {
+#side-cart, #subtotal, #shipping {
     font-size: large;;
 }
 
@@ -68,4 +75,14 @@ select {
 /* Cart */
 #shipping-text {
     font-size: medium;
+}
+
+/* Purchasing Cart */
+input {
+    font-size: large;
+    color: grey;
+}
+
+#order {
+    font-size: x-large;
 }

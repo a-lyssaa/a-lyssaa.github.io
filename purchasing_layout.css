@@ -28,5 +28,58 @@ header img, #cart-overlay img {
 
 main {
     margin-top: clamp(20px, 4vw, 50px);
-    padding: 25px 0 0 0;
+    padding: 25px;
+}
+
+input, .third, button {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 80vw;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    height: 40px;
+}
+
+.half {
+    width: 38vw;
+    margin-right: 1vw;
+}
+
+.third {
+    width: 25vw;
+    margin-right: 1vw;
+}
+
+#discount {
+    width: 59vw;
+    margin-right: 1vw;
+}
+
+button {
+    width: 19vw;
+}
+
+#subtotal, #shipping {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order {
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    width: 70vw;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    height: 35px;
 }
