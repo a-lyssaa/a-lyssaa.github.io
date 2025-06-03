@@ -23,8 +23,8 @@ header {
 }
 
 header img {
-    width: clamp(15px, 2vw, 25px);
-    height: clamp(15px, 2vw, 25px);
+    width: clamp(15px, 2vw, 20px);
+    height: clamp(15px, 2vw, 20px);
     margin: 5px;
 }
 
