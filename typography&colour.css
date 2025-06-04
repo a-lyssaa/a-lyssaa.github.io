@@ -30,7 +30,7 @@ main, #side-cart{
     background-color: white;
 }
 
-.add-to-wishlist {
+.add-to-wishlist, .move-to-wishlist {
     background-color: lightgrey;
     font-size: medium;
 }
@@ -39,13 +39,13 @@ select, button {
     font-size: medium;
 }
 
-.add-to-cart, .add-and-checkout, .buttons, #checkout-button {
+.search-add-to-cart, .add-to-cart, .add-and-checkout, .buttons, #checkout-button {
     background-color: #F3E5C3;
     font-size: medium;
 }
 
-#side-cart, #subtotal, #shipping {
-    font-size: large;;
+#side-cart, #cost, #total {
+    font-size: large;
 }
 
 /* Homepage */
@@ -73,6 +73,10 @@ select {
 }
 
 /* Cart */
+.cart-indiv-prods {
+    font-size: medium;
+}
+
 #shipping-text {
     font-size: medium;
 }
@@ -88,6 +92,10 @@ input {
 }
 
 /* Confirmation Page */
+#message {
+    font-size: large;
+}
+
 #confirmation {
     font-size: x-large;
 }

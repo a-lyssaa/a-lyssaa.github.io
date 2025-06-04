@@ -30,3 +30,13 @@ main {
 #message {
     text-align: center;
 }
+
+#cost, #total {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    text-align: center;
+    height: 35px;
+}

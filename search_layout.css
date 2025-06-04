@@ -8,11 +8,7 @@ header {
     top: 0;
 }
 
-#added-pop-up {
-    display: none;
-}
-
-.nav1, .nav2, #added-pop-up.active {
+.nav1, .nav2 {
     display: flex;
     align-items: center;
     height: clamp(20px, 4vw, 50px);
@@ -20,7 +16,7 @@ header {
     padding: 10px;
 }
 
-.nav1, #added-pop-up.active {
+.nav1 {
     justify-content: space-between;
 }
 
@@ -64,7 +60,7 @@ main {
     gap: 20px;
 }
 
-.add-to-wishlist, .add-to-cart {
+.add-to-wishlist, .search-add-to-cart {
     display: flex;
     text-align: center;
     border: 1px solid;
@@ -72,7 +68,7 @@ main {
     padding: 5px;
 }
 
-.add-to-wishlist p, .add-to-cart p {
+.add-to-wishlist p, .search-add-to-cart p {
     margin: auto;
 }
 

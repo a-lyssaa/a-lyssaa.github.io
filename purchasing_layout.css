@@ -59,7 +59,7 @@ button {
     width: 19vw;
 }
 
-#subtotal, #shipping {
+#cost, #total {
     display: flex;
     justify-content: space-between;
 }
