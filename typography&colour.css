@@ -1,4 +1,4 @@
-/* General */
+/* General/shared styling */
 body, select, input, button {
     font-family: "Arapey", serif;
     font-weight: 400;
@@ -9,7 +9,7 @@ body {
     background-color: #E8EAE9;
 }
     
-header, #cart-top {
+header, #top-fix {
     background-color: #D8F3FE;
 }
 
@@ -26,7 +26,7 @@ a {
     text-decoration: none;
 }
 
-main, #side-cart{
+main, #side-cart {
     background-color: white;
 }
 
@@ -84,7 +84,6 @@ select {
 /* Purchasing Cart */
 input {
     font-size: large;
-    color: grey;
 }
 
 #order {
@@ -96,6 +95,6 @@ input {
     font-size: large;
 }
 
-#confirmation {
-    font-size: x-large;
+#confirmation, #order-num {
+    font-size: xx-large;
 }

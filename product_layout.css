@@ -1,3 +1,4 @@
+/* General and pop up styling */
 body {
     margin: 0;
 }
@@ -8,7 +9,7 @@ header {
     top: 0;
 }
 
-#added-pop-up, #size-warning {
+#added-pop-up, #size-warning, #empty-warning {
     display: none;
 }
 
@@ -21,7 +22,7 @@ header {
     padding: 10px;
 }
 
-#size-warning.active {
+#size-warning.active, #empty-warning.active {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -29,11 +30,12 @@ header {
     border-bottom: 1px solid;
 }
 
-header img, #cart-overlay img {
+header img, #cart-top img, #checkout-button img, .move-to-wishlist img {
     width: clamp(15px, 2vw, 20px);
     height: clamp(15px, 2vw, 20px);
     margin: 5px;
 }
+/* ---------- */
 
 main {
     margin-top: clamp(20px, 4vw, 50px);
@@ -64,7 +66,7 @@ main {
     margin: 0 auto 0 auto;
 }
 
-.prod-desc, .options {
+.prod-desc {
     display: flex;
     justify-content: space-between;
 }
@@ -76,6 +78,7 @@ main {
 .colours {
     display: flex;
     gap: 5px;
+    margin-bottom: 30px;;
 }
 
 .buttons {
@@ -176,11 +179,15 @@ body.no-scroll{
     height: 100vh;
     transition: right 0.3s ease;
     overflow-y: auto;
-    padding: 0 0 30px 0;
 }
 
 #side-cart.active {
     right: 0;
+}
+
+#top-fix {
+    position: fixed;
+    width: 390px;
 }
 
 #cart-top {
@@ -188,13 +195,58 @@ body.no-scroll{
 }
 
 #cart-prods {
-    height: 398px;
+    margin-top: 50px;
+    height: 401px;
     border-bottom: 1px solid;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cart-indiv-prods {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid;
+    padding: 10px;
+    align-content: center;
+    gap: 10px;
+}
+
+#empty {
+    text-align: center;
+}
+
+.desc1, .desc2 {
+    display: flex;
+    width: 286px;
+    height: 40px;
+    justify-content: space-between;
+    align-content: baseline;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#quantity {
+    text-align: center;
+    border: 1px solid;
+    width: 50px;
+    padding: 5px;
+}
+
+.move-to-wishlist {
+    width: 60px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.move-to-wishlist p, .move-to-wishlist img {
+    margin: 0;
 }
 
 #cart-details {
-    padding: 0 10px 10px 10px;
+    padding: 10px;
 }
 
 #cart-wishlist {
@@ -223,6 +275,7 @@ body.no-scroll{
     align-items: center;
     margin: auto;
 }
+/* ---------- */
 
 footer {
     text-align: center;

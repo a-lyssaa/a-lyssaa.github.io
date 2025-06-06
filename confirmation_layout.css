@@ -24,12 +24,50 @@ header img {
 
 main {
     margin-top: clamp(20px, 4vw, 50px);
+}
+
+#message, #main2 {
     padding: 25px;
 }
 
 #message {
     text-align: center;
 }
+
+#order-num {
+    border-bottom: 1px solid;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+#checkout-prods {
+    margin-bottom: 50px;
+}
+
+/* Appended with JS */
+.checkout-indiv-prod {
+    display: flex;
+    width: 100vw;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.checkout-indiv-prod img {
+    padding: 10px;
+}
+
+.checkout-desc {
+    width: 100%;
+}
+
+.desc1 {
+    display: flex;
+    width: 98%;
+    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+/* ---------- */
 
 #cost, #total {
     display: flex;

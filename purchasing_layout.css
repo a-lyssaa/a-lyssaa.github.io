@@ -24,13 +24,16 @@ header img, #cart-overlay img {
 
 main {
     margin-top: clamp(20px, 4vw, 50px);
+}
+
+#main1, #main2 {
     padding: 25px;
 }
 
 input, .third, button {
     border: 1px solid;
     border-radius: 10px;
-    width: 80vw;
+    width: 79vw;
     height: 30px;
     padding: 10px;
     margin-bottom: 20px;
@@ -48,6 +51,39 @@ button {
 .third {
     width: 25vw;
     margin-right: 1vw;
+}
+
+#order-summary {
+    border-bottom: 1px solid;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+#checkout-prods {
+    margin-bottom: 50px;
+}
+
+.checkout-indiv-prod {
+    display: flex;
+    width: 100vw;
+    border-bottom: 1px solid;
+    align-items: center;
+}
+
+.checkout-indiv-prod img {
+    padding: 10px;
+}
+
+.checkout-desc {
+    width: 100%;
+}
+
+.desc1 {
+    display: flex;
+    width: 98%;
+    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 #discount {

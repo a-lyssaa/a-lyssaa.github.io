@@ -34,6 +34,7 @@
           </div>
     </header>
     <main id="all-prods">
+        <!-- Products hidden, only 1 shown through javascript -->
         <section class="indiv-prods" data-product-id="arch-tie">
             <div class="images">
                 <img src="img/arch_tie.png" alt="Arch Tie Shirt" width="500" height="754">
@@ -51,15 +52,7 @@
                         <img src="img/colour2.png" alt="Colour 2" width="20" height="20">
                         <img src="img/colour3.png" alt="Colour 3" width="25" height="25">
                     </div>
-                    <select class="buttons" id="size" name="size">
-                        <option value="">Size</option>
-                        <option value="XXS">XXS</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+                    <select class="buttons size-select" name="size"></select>
                 </div>
                 <div class="additional">
                     <div id="headings">
@@ -103,15 +96,7 @@
                         <img src="img/colour2.png" alt="Colour 2" width="20" height="20">
                         <img src="img/colour3.png" alt="Colour 3" width="25" height="25">
                     </div>
-                    <select class="buttons" id="size" name="size">
-                        <option value="">Size</option>
-                        <option value="XXS">XXS</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+                    <select class="buttons size-select" name="size"></select>
                 </div>
                 <div class="additional">
                     <div id="headings">
@@ -154,15 +139,7 @@
                     <div class="colours">
                         <img src="img/colour3.png" alt="Colour 3" width="25" height="25">
                     </div>
-                    <select class="buttons" id="size" name="size">
-                        <option value="">Size</option>
-                        <option value="XXS">XXS</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+                    <select class="buttons size-select" name="size"></select>
                 </div>
                 <div class="additional">
                     <div id="headings">
@@ -206,15 +183,7 @@
                     <div class="colours">
                         <img src="img/colour3.png" alt="Colour 3" width="25" height="25">
                     </div>
-                    <select class="buttons" id="size" name="size">
-                        <option value="">Size</option>
-                        <option value="XXS">XXS</option>
-                        <option value="XS">XS</option>
-                        <option value="S">S</option>
-                        <option value="M">M</option>
-                        <option value="L">L</option>
-                        <option value="XL">XL</option>
-                    </select>
+                    <select class="buttons size-select" name="size"></select>
                 </div>
                 <div class="additional">
                     <div id="headings">
@@ -243,23 +212,29 @@
             </div>
         </section>
     </main>
+    <!-- Cart that slides in from the right side -->
     <div id="cart-overlay">
         <div id="blur"></div>
         <div id="side-cart">
-            <div id="cart-top">
-                <p>Cart</p>
-                <img id="close-cart" src="img/x_icon.png" alt="X button">
+            <div id="top-fix">
+                <div id="cart-top">
+                    <p>Cart</p>
+                    <img id="close-cart" src="img/x_icon.png" alt="X button">
+                </div>
+                <div id="empty-warning">
+                    <p>Add products to checkout!</p>
+                    <button id="close-empty-warning">OK</button>
+                </div>
             </div>
             <div id="cart-prods">
+                <p id="empty">No products in cart at the moment.</p>
             </div>
             <div id="cart-details">
                 <p>Make your wishlist come true!</p>
                 <p id="cart-wishlist">No products in wishlist at the moment.</p>
                 <p id="shipping-text">Shipping and taxes calculated at checkout.</p>
-                <div id="subtotal">
-                    <p>Subtotal:</p>
-                    <p></p>
-                </div>
+                <!-- Subtotal calculated and outputted with javascript -->
+                <div id="subtotal"></div>
                 <a id="checkout-button" href="purchasing.html">
                     <p>CHECKOUT</p>
                     <img src="img/cart_icon.png" alt="Cart Icon">

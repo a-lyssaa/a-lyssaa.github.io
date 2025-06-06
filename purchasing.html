@@ -20,54 +20,48 @@
         </div>
     </header>
     <main>
-        <h2>Contact</h2>
-        <input type="text" placeholder="Email">
-        <div id="delivery-details">
-            <h2>Delivery</h2>
-            <input class="half" type="text" placeholder="First name">
-            <input class="half" type="text" placeholder="Last name">
-            <input type="text" placeholder="Full Address">
-            <input class="third" type="text" placeholder="City">
-            <select class="third" type="text" placeholder="City">
-                <option>- State -</option>
-                <option>Australian Capital Territory</option>
-                <option>New South Wales</option>
-                <option>Northern Territory</option>
-                <option>Queensland</option>
-                <option>South Australia</option>
-                <option>Tasmania</option>
-                <option>Victoria</option>
-                <option>Western Australia</option>
-            </select>
-            <input class="third" type="text" placeholder="Postcode">
-        </div>
-        <h2>Payment</h2>
-        <input type="text" placeholder="Card number">
-        <input class="half" type="text" placeholder="Expiration Date (MM/YY)">
-        <input class="half" type="text" placeholder="Security Code">
-        <input type="text" placeholder="Name on card">
-        <br><br><br>
-        <h2>Order Summary</h2>
-        <div id="checkout-prods">
-
-        </div>
-        <input id="discount" type="text" placeholder="Discount code">
-        <button id="apply">Apply</button>
-        <div id="cost">
-            <div>
-                <p>Subtotal:<br>Shipping:</p>
+        <!-- User input information -->
+        <div id="main1">
+            <h2>Contact</h2>
+            <input id="email" type="email" placeholder="Email" required>
+            <div id="delivery-details">
+                <h2>Delivery</h2>
+                <input class="half" id="first-name" type="type" placeholder="First name" required>
+                <input class="half" id="last-name" type="text" placeholder="Last name" required>
+                <input id="address" type="text" placeholder="Full Address" required>
+                <input id="city" class="third" type="text" placeholder="City" required>
+                <select class="third" id="state" type="text" placeholder="State" required>
+                    <option value="">- State -</option>
+                    <option>Australian Capital Territory</option>
+                    <option>New South Wales</option>
+                    <option>Northern Territory</option>
+                    <option>Queensland</option>
+                    <option>South Australia</option>
+                    <option>Tasmania</option>
+                    <option>Victoria</option>
+                    <option>Western Australia</option>
+                </select>
+                <input class="third" id="postcode" type="text" placeholder="Postcode" pattern="\d{4}" required>
             </div>
-            <div>
-                <p>$<br>$7.00</p>
-            </div>
+            <h2>Payment</h2>
+            <input id="card-number" type="text" placeholder="Card number" pattern="\d{16}" required>
+            <input class="half" id="exp-date" type="text" placeholder="Expiration Date (MM/YY)" pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+            <input class="half" id="cvv" type="text" placeholder="CVV/Security Code" pattern="\d{3}" required>
+            <input id="card-name" type="text" placeholder="Name on card" required>
+            <br><br><br>
         </div>
-        <div id="total">
-            <p>Total:</p>
-            <p>$</p>
+        <h2 id="order-summary">Order Summary</h2>
+        <!-- DIVs for javascript -->
+        <div id="checkout-prods"></div>
+        <div id="main2">
+            <input id="discount" type="text" placeholder="Discount code">
+            <button id="apply">Apply</button>
+            <div id="cost"></div>
+            <div id="total"></div>
+            <a href="confirmation.html">
+                <p id="order" class="buttons">PAY AND ORDER</p>
+            </a>
         </div>
-        <a href="confirmation.html">
-        <p id="order" class="buttons">PAY AND ORDER</p>
-        </a>
     </main>
     <footer>
         <p>2025 DEIJI STUDIOS</p>

@@ -8,7 +8,7 @@ header {
     top: 0;
 }
 
-.nav1, .nav2, #cart-top {
+.nav1, .nav2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ header {
     padding: 10px 15vw;
 }
 
-header img, #cart-top img, #checkout-button img, .move-to-wishlist img {
+header img {
     width: clamp(15px, 2vw, 20px);
     height: clamp(15px, 2vw, 20px);
     margin: 5px;
@@ -74,121 +74,6 @@ main {
         width: 105px;
         height: 165px;
     }
-}
-
-/* Cart */
-body.no-scroll{
-    overflow: hidden;
-}
-
-#cart-overlay {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%; 
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(4px);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-#cart-overlay.active {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
-
-#blur {
-    width: 100%;
-    height: 100%;
-}
-
-#side-cart {
-    position: fixed;
-    right: -390px;
-    width: 390px;
-    height: 100vh;
-    transition: right 0.3s ease;
-    overflow-y: auto;
-}
-
-#side-cart.active {
-    right: 0;
-}
-
-#cart-top {
-    height: 30px;
-}
-
-#cart-prods {
-    height: 398px;
-    border-bottom: 1px solid;
-}
-
-.cart-indiv-prods {
-    display: flex;
-    width: 100%;
-    height: 132px;
-    border-bottom: 1px solid;
-    padding: 10px;
-    align-items: center;
-    gap: 10px;
-}
-
-#empty {
-    text-align: center;
-}
-
-.cart-prod-desc {
-    display: flex;
-    width: 286px;
-    justify-content: space-between;
-}
-
-.move-to-wishlist {
-    width: 60px;
-    height: 70px;
-    border: 1px solid;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-}
-
-.move-to-wishlist p, .move-to-wishlist img {
-    margin: 0;
-}
-
-#cart-details {
-    padding: 10px;
-}
-
-#cart-wishlist {
-    width: 80%;
-    height: 80px;
-    border: 1px solid;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-    margin-bottom: 50px;
-}
-
-#subtotal {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-#checkout-button {
-    width: 200px;
-    height: 25px;
-    border: 1px solid;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
 }
 
 footer {
