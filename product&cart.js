@@ -8,7 +8,7 @@ window.onload = function() {
             cards[i].onclick = function() {
                 var prodId = this.getAttribute('data-product-id');
                 if (!prodId) return;        
-                window.location.href = 'product.html?prod=' + encodeURIComponent(prodId);
+                window.location.href = 'product&cart.html?prod=' + encodeURIComponent(prodId);
             };
         }
       return;
