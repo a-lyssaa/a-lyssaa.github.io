@@ -40,7 +40,7 @@ main {
 
 .prod-desc {
     display: flex;
-    width: 300px;
+    width: 280px;
     justify-content: space-between;
     height: 74px;
 }
