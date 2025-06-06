@@ -18,7 +18,7 @@ header, #top-fix {
 }
 
 .nav2, .full-prod-desc {
-    font-size: clamp(10px, 2.5vw, 25px);
+    font-size: clamp(15px, 2.5vw, 25px);
 }
 
 a {
@@ -50,7 +50,7 @@ select, button {
 
 /* Homepage */
 #slogan {
-    font-size: clamp(10px, 2.5vw, 25px);
+    font-size: clamp(15px, 2.5vw, 25px);
 }
 
 .home-prod-desc {
