@@ -69,7 +69,7 @@ header img {
 }
 
 .prod-img {
-    height: clamp(450px, 100vw, 600px);
+    height: clamp(500px, 100vw, 600px);
     width: 250px;
 }
 
