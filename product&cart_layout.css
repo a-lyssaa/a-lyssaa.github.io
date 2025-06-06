@@ -218,7 +218,7 @@ body.no-scroll{
 .desc1, .desc2 {
     display: flex;
     width: 286px;
-    height: 40px;
+    height: 35px;
     justify-content: space-between;
     align-content: baseline;
     margin-top: 0px;
