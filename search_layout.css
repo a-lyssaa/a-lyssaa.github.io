@@ -42,7 +42,7 @@ main {
     display: flex;
     width: 300px;
     justify-content: space-between;
-    height: 125px;
+    height: 74px;
 }
 
 @media (max-width= 400px) {
