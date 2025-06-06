@@ -41,6 +41,7 @@ input, .third, button {
 
 button {
     height: 40px;
+    width: 19vw;
 }
 
 .half {
@@ -48,9 +49,15 @@ button {
     margin-right: 1vw;
 }
 
-.third {
+.third, #state {
     width: 25vw;
     margin-right: 1vw;
+}
+
+#state {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 40px;
 }
 
 #order-summary {
@@ -89,10 +96,6 @@ button {
 #discount {
     width: 59vw;
     margin-right: 1vw;
-}
-
-button {
-    width: 19vw;
 }
 
 #cost, #total {
